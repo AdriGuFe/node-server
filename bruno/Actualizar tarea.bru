@@ -1,0 +1,15 @@
+meta {
+  name: Actualizar tarea
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/api/tasks/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {"done": true}
+}
